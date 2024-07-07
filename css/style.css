@@ -1,0 +1,511 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+body {
+    background-color: #faf8ed;
+    font-family: "Cairo", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: #faf8ed;
+}
+
+header p {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    margin-right: 40px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    font-size: 20px;
+    padding: 3px;
+    border-bottom: 2px solid black;
+}
+
+header .buttons-container i {
+    color: black;                        /* Please Fill This Block */
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header .buttons-container i:hover {
+    font-size: 28px;
+}
+
+@media(max-width:1050px){
+    header ul {
+        display: none;
+    }
+}
+
+/* First Page */
+
+.first-page {
+    position: relative;
+    margin-top: 200px;
+    padding:0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-page img {
+    width: 500px;
+    margin-top: 50px;
+}
+
+.text-container {
+    width: 600px;
+}
+
+.first-page .text-container .first {
+    font-size: 20px;
+    color: palevioletred;
+    margin-bottom: 20px;
+}
+
+.first-page .text-container .heading {
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.first-page .text-container .second {
+    color: #cacaca;
+    margin-bottom: 20px;
+}
+
+.first-page .text-container .button {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+}
+
+.first-page .text-container .button i {
+    margin-right: 10px;
+}
+
+.first-page .text-container .button:hover {
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.end-image {
+    width: 100px;
+}
+
+@media(max-width:600px){
+
+    header {
+        padding: 50px;
+    }
+
+    .first-page img {
+        width: 400px;
+    }
+
+    .first-page .text-container .heading {
+        font-size: 50px;
+    }
+    
+}
+
+@media(max-width:500px){
+    .first-page img {
+        width: 300px;
+    }
+
+    .first-page .text-container .heading {
+        font-size: 30px;
+    }
+}
+
+/* End-Image */
+
+.end-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.end-image img {
+    display: flex;
+    width: 50px;
+}
+
+/* Second Page */
+
+.second-page .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.second-page .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.second-page .cards .card:hover {
+    scale: 1.05;
+}
+
+.second-page .cards .card img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.second-page .cards .card .items {
+    color: palevioletred;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.second-page .cards .card .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.second-page .cards .card a {
+    color: black;
+    padding: 2px;
+    border-bottom: 2px solid black;
+}
+
+/* Third Page */
+
+.third-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-page .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    width: 700px;
+}
+
+.third-page .text-container .heading {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.third-page .text-container .text {
+    font-size: 18px;
+    text-align: center;
+    color: #cacaca;
+}
+
+.third-page .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.third-page .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 30px 0 30px;
+}
+
+.third-page .cards .card:hover {
+    scale: 1.05;
+}
+
+.third-page .cards .card img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.third-page .cards .card .price {
+    color: palevioletred;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.third-page .cards .card .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.third-page .cards .card a {
+    color: black;
+    padding: 2px;
+    border-bottom: 2px solid black;
+}
+
+@media(max-width:750px){
+    .third-page .text-container {
+        width: 500px;
+    }
+
+    .third-page .text-container .heading {
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:550px){
+    .third-page .text-container {
+        width: 300px;
+    }
+
+    .third-page .text-container .heading {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Forth Page */
+
+.forth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forth-page .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    width: 700px;
+}
+
+.forth-page .text-container .heading {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.forth-page .text-container .text {
+    font-size: 18px;
+    text-align: center;
+    color: #cacaca;
+}
+
+
+
+/* Forth Page Cards */
+
+
+.forth-page .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.forth-page .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 50px 30px 0  30px;
+}
+
+.forth-page .cards .card img {
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+.forth-page .cards .card .date {
+    font-size: 18px;
+    color: #a5a2a2;
+    margin-bottom: 10px;
+} 
+
+.forth-page .cards .card .text {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.forth-page .cards .card:hover {
+    scale: 1.05;
+}
+
+@media(max-width:750px){
+    .forth-page .text-container {
+        width: 500px;
+    }
+
+    .forth-page .text-container .heading {
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:550px){
+    .forth-page .text-container {
+        width: 300px;
+    }
+
+    .forth-page .text-container .heading {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .forth-page .card {
+        width: 350px;
+        margin: 50px 0px 0px  0px;
+    }
+
+    .forth-page .cards .card img{
+        width: 330px;
+    }
+
+    .end-image img {
+        width: 40px;
+    }
+}
+
+
+/* Last Page */
+
+.last-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.last-page .main {
+    margin: 20px;
+    padding: 50px;
+    max-width: 1100px;
+    background-image: url(../img/cta.jpg);
+    background-size: cover;
+}
+
+.last-page .main .heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.last-page .main .text {
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.last-page .main form input {
+    max-width: 600px;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.last-page .main form button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.last-page .main form button:hover {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    font-size: 18px;
+}
+
+
+/* ------------------------------------------ Footer ----------------------------------- */
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+footer .text-container {
+    margin: 0;
+    padding: 70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #24262b;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+footer section .header {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+footer section .text {
+    color: #bbbbbb;
+    margin-bottom: 10px;
+}
+
+footer section .text:hover {
+    color: white;
+}
+
+footer .buttons-container i {
+    font-size: 30px;
+    color: white;
+    margin: 50px 10px;
+}
+
+footer .buttons-container i:hover {
+    font-size: 35px;
+}
